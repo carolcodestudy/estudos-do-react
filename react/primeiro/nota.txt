@@ -1,0 +1,5 @@
+Quando reinstalei tive que apagar a pasta antiga e refiz o processo dentro do CMD
+Primeiro comando a ser usar será este: npm create vite@latest nome-do-projeto -- --template react
+Segundo comando: cd nome-do-projeto
+Terceiro comando: npm install (Serve para baixar as dependencias dentro desta pasta)
+Quarto comando: npm run dev (Abre o servidor)

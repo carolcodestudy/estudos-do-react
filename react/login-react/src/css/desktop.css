@@ -1,0 +1,155 @@
+@charset "UTF-08";
+/*Design inspirado em outras aplicações*/
+*{
+    margin: 0%; padding: 0px; box-sizing: border-box;
+}
+
+html,body{
+    width: 100vw; height: 100vh; cursor: context-menu;
+}
+
+:root{
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; --font-color: rgba(255, 255, 255, 0.893);
+}
+
+div{
+    width: 100%; height: 100%; background-color: #0D1B2A;
+}
+
+@media (min-width:600px) and (max-width:768px) {
+    div > #login > h1{
+        font-family:var(--font-family); color: var(--font-color); text-align: center; padding-top: 10%; padding-bottom: 8%; font-size: 2.2em; letter-spacing: 2px; text-transform: capitalize;
+        
+        animation: title 1.5s ease-in-out 1;
+    } 
+
+    @keyframes title {
+    0% {color: rgb(252, 149, 14); font-size: 2em; padding-top: 15%;} 25% {color: rgb(253, 213, 149);} 50% { color: rgb(250, 243, 225);}100% {color: var(--font-color);}
+    }
+
+    div > #login > form{
+    display: block; margin: auto; width: 425px; height: 370px; background-image: url('../img/background-login-min.jpg'); background-position: center bottom; background-repeat: no-repeat;  background-size: cover; border-radius: 10px; box-shadow: 1px 2px 10px rgb(184, 173, 153);
+    }
+
+    #login > form > input{
+    display: block; margin: auto; font-family: var(--font-family); color: var(--font-color); text-shadow: 1px 0px 2px black; letter-spacing: 2px;
+    }
+
+    #login > form > #input-user , #input-password{
+    border-top: none; border-right: none; border-left: none; border-bottom: 2px solid rgba(189, 27, 15, 0.968);
+    }
+    #login > form > #input-user , #input-password:focus{
+    outline: 0;
+    }
+
+    #login > form > #input-user{
+    background-color: transparent;
+    background-color: transparent; transform: translateY(20vh); text-indent: 5px;
+    }
+    #login > form > #input-user::placeholder{
+        color: rgb(14, 2, 34); font-style: italic; text-shadow: 1px 0px 2px rgb(252, 250, 250); text-indent: 5px; letter-spacing: 2px; opacity: 0.9; background-color: rgba(249, 246, 246, 0.653); border-radius: 3px;
+    }
+
+    #login > form > #input-password{
+    background-color: transparent; transform: translateY(25vh); text-indent: 5px;
+    }
+    #login > form > #input-password::placeholder{
+        color: rgb(14, 2, 34); font-style: italic; text-shadow: 1px 0px 2px rgb(252, 250, 250); text-indent: 5px; letter-spacing: 2px; opacity: 0.9; background-color: rgba(249, 246, 246, 0.653); border-radius: 3px; 
+    }
+
+    #login > form > #button{
+    margin: auto; display: block; transform: translateY(35vh); padding: 3px 6px 3px 6px; border-width: 0px; border-radius: 3px; box-shadow: 1px 1px 3px black; background-color: rgba(189, 27, 15, 0.968); font-family: var(--font-family); color: var(--font-color); font-style: italic; font-weight: 100; letter-spacing: 2px; cursor: pointer;
+    }
+}
+
+@media (min-width:768px){
+    div > #login h1{
+        font-family:var(--font-family); color: var(--font-color); text-align: center; padding-top: 80px; padding-bottom: 60px; font-size: 2.2em; letter-spacing: 2px; text-transform: capitalize;
+        
+        animation: title 1.5s ease-in-out 1;
+    } 
+
+    @keyframes title {
+    0% {color: rgb(252, 149, 14); font-size: 2em; padding-top: 15%;} 25% {color: rgb(253, 213, 149);} 50% { color: rgb(250, 243, 225);}100% {color: var(--font-color);}
+    }
+
+    div > #login form{
+    display: block; margin: auto; width: 425px; height: 370px; background-image: url('../img/background-login-min.jpg'); background-position: center bottom; background-repeat: no-repeat;  background-size: cover; border-radius: 10px; box-shadow: 1px 2px 10px rgb(184, 173, 153);
+    }
+
+    #login > form > input{
+    display: block; margin: auto; font-family: var(--font-family); color: var(--font-color); text-shadow: 1px 0px 2px black; letter-spacing: 2px;
+    }
+
+    #login > form > #input-user , #input-password{
+    border-top: none; border-right: none; border-left: none; border-bottom: 2px solid rgba(189, 27, 15, 0.968);
+    }
+    #login > form > #input-user , #input-password:focus{
+    outline: 0;
+    }
+
+    #login > form > #input-user{
+    background-color: transparent;
+    background-color: transparent; transform: translateY(20vh); text-indent: 5px;
+    }
+    #login > form > #input-user::placeholder{
+        color: rgb(14, 2, 34); font-style: italic; text-shadow: 1px 0px 2px rgb(252, 250, 250); text-indent: 5px; letter-spacing: 2px; opacity: 0.9; background-color: rgba(249, 246, 246, 0.653); border-radius: 3px;
+    }
+
+    #login > form > #input-password{
+    background-color: transparent; transform: translateY(25vh); text-indent: 5px;
+    }
+    #login > form > #input-password::placeholder{
+        color: rgb(14, 2, 34); font-style: italic; text-shadow: 1px 0px 2px rgb(252, 250, 250); text-indent: 5px; letter-spacing: 2px; opacity: 0.9; background-color: rgba(249, 246, 246, 0.653); border-radius: 3px; 
+    }
+
+    #login > form > #button{
+    margin: auto; display: block; transform: translateY(35vh); padding: 3px 6px 3px 6px; border-width: 0px; border-radius: 3px; box-shadow: 1px 1px 3px black; background-color: rgba(189, 27, 15, 0.968); font-family: var(--font-family); color: var(--font-color); font-style: italic; font-weight: 100; letter-spacing: 2px; cursor: pointer;
+    }
+}
+
+/*Tela deitada*/
+@media (orientation:landscape) and (max-height:560px) and (max-width:960px){
+    div > #login h1{
+    font-family:var(--font-family); color: var(--font-color); text-align: center; padding-top: 5%; padding-bottom: 5%; font-size: 2.2em; letter-spacing: 2px;
+        
+    animation: title 1.5s ease-in-out 1;
+    } 
+
+    @keyframes title {
+    0% {color: rgb(252, 149, 14); font-size: 2em; padding-top: 15%;} 25% {color: rgb(253, 213, 149);} 50% { color: rgb(250, 243, 225);}100% {color: var(--font-color);}
+    }
+
+    div > #login form{
+    display: block; margin: auto; width: 70%; height: 60%; background-image: url('../img/background-login-min.jpg'); background-position: center bottom; background-repeat: no-repeat;  background-size: cover; border-radius: 10px; box-shadow: 1px 2px 10px rgb(184, 173, 153);
+    }
+
+    #login > form > input{
+    display: block; margin: auto; font-family: var(--font-family); color: var(--font-color); text-shadow: 1px 0px 2px black; letter-spacing: 2px;}
+
+    #login > form > #input-user , #input-password{
+    border-top: none; border-right: none; border-left: none; border-bottom: 2px solid rgba(189, 27, 15, 0.968); width: 200px;
+    }
+    #login > form > #input-user , #input-password:focus{
+    outline: 0;
+    }
+
+    #login > form > #input-user{
+    background-color: transparent;
+    background-color: transparent; transform: translateY(20vh); text-indent: 5px;
+    }
+    #login > form > #input-user::placeholder{
+        color: rgb(14, 2, 34); font-style: italic; text-shadow: 1px 0px 2px rgb(252, 250, 250); text-indent: 5px; letter-spacing: 2px; opacity: 0.9; background-color: rgba(249, 246, 246, 0.653); border-radius: 3px;
+    }
+
+    #login > form > #input-password{
+    background-color: transparent; transform: translateY(25vh); text-indent: 5px;
+    }
+    #login > form > #input-password::placeholder{
+        color: rgb(14, 2, 34); font-style: italic; text-shadow: 1px 0px 2px rgb(252, 250, 250); text-indent: 5px; letter-spacing: 2px; opacity: 0.9; background-color: rgba(249, 246, 246, 0.653); border-radius: 3px; 
+    }
+
+    #login > form > #button{
+    transform: translateY(35vh); padding: 3px 10px 3px 10px; border-width: 0px; border-radius: 3px; box-shadow: 1px 1px 3px black; background-color: rgba(189, 27, 15, 0.968); font-family: var(--font-family); color: var(--font-color); font-style: italic; font-weight: 100; letter-spacing: 2px; cursor: pointer;
+    }
+}
